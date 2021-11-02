@@ -1,13 +1,7 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import Router from '../routes';
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
-  );
+  return <div>Junseo's project setting</div>;
 };
 
 export default App;
