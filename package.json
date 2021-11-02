@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js --progress",
-    "build": "webpack --config webpack.prod.js --progress && echo '/* /index.html 200' > dist/_redirects"
+    "build": "webpack --config webpack.prod.js --progress"
   },
   "dependencies": {
     "@loadable/component": "^5.15.0",
