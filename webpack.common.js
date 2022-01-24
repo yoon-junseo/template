@@ -1,6 +1,7 @@
 /* eslint-disable */
 const path = require('path');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const { EnvironmentPlugin } = require('webpack');
 require('dotenv/config');
 
 module.exports = {
@@ -30,5 +31,5 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
-  plugins: [new ForkTsCheckerWebpackPlugin()],
+  plugins: [new ForkTsCheckerWebpackPlugin(), new EnvironmentPlugin(['REACT_APP_SERVER_URL'])],
 };
