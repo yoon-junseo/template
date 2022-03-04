@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js --progress",
-    "build": "webpack --config webpack.prod.js --progress && echo '/* /index.html 200' > dist/_redirects"
+    "build": "webpack --config webpack.prod.js --progress && echo '/* /index.html 200' > dist/_redirects",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@loadable/component": "^5.15.0",
@@ -24,6 +26,14 @@
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
     "@babel/runtime-corejs3": "^7.16.0",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "@types/loadable__component": "^5.13.4",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
